@@ -402,6 +402,7 @@ section {
   bottom: 0;
   left: calc(50% - 25px);
 }
+
 .section-title p {
   margin-bottom: 0;
 }
@@ -478,9 +479,7 @@ section {
   background-color: #e03a3c;
 }
 .clients .swiper-slide img {
-  opacity: 0.5;
   transition: 0.3s;
-  filter: grayscale(100);
 }
 .clients .swiper-slide img:hover {
   opacity: 1;
