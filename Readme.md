@@ -1,6 +1,6 @@
 # B&R Technology - Company Website Portfolio
 
-![B&R Technology Logo](https://github.com/Tridence/B-R-Tech/blob/main/assets/img/logo.png)
+![B&R Technology Logo](https://github.com/Tridence/B-R-Tech/blob/main/assets/img/logo-white.png)
 
 ## Introduction
 
