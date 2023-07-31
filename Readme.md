@@ -1,24 +1,14 @@
 # B&R Technology - Company Website Portfolio
 
-![B&R Technology Logo](https://example.com/path-to-logo.png)
+![B&R Technology Logo](https://github.com/Tridence/B-R-Tech/blob/main/assets/img/logo.png)
 
 ## Introduction
 
-Welcome to the official GitHub repository of B&R Technology - a Tech Startup specializing in Digital Design, Digital Marketing, Strategy & Planning, and Mobile & Tablet solutions.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [About B&R Technology](#about-br-technology)
-- [Services](#services)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Contact](#contact)
-- [License](#license)
+Welcome to the official GitHub repository of B & R Technology - a Tech Startup specializing in Digital Design, Digital Marketing, Strategy & Planning, and Mobile & Tablet solutions.
 
 ## About B&R Technology
 
-B&R Technology is a dynamic and innovative Tech Startup that leverages cutting-edge technologies to provide creative and effective solutions for our clients. We are passionate about delivering top-notch services in the fields of Digital Design, Digital Marketing, Strategy & Planning, and Mobile & Tablet solutions.
+B & R Technology is a dynamic and innovative Tech Startup that leverages cutting-edge technologies to provide creative and effective solutions for our clients. We are passionate about delivering top-notch services in the fields of Digital Design, Digital Marketing, Strategy & Planning, and Mobile & Tablet solutions.
 
 ## Services
 
@@ -38,15 +28,6 @@ At B&R Technology, we understand the importance of a well-defined strategy. Our 
 
 In the era of mobile-first, we develop cutting-edge mobile and tablet solutions to cater to the ever-growing base of smartphone users. Our mobile apps and responsive designs provide a seamless user experience on all devices.
 
-## Getting Started
-
-Follow these steps to get started with our projects:
-
-1. Clone the repository: `git clone https://github.com/BRTechnology/portfolio.git`
-2. Navigate to the project directory: `cd portfolio`
-3. Install dependencies: `npm install`
-4. Launch the application: `npm start`
-
 ## Contributing
 
 We welcome contributions from the open-source community. To contribute to our projects, follow these steps:
@@ -61,7 +42,7 @@ We welcome contributions from the open-source community. To contribute to our pr
 
 For any inquiries or collaboration opportunities, please reach out to us:
 
-- Email: contact@brtechnology.com
+- Email: info@brtechnology.com
 - Website: https://www.brtechnology.com
 - Twitter: [@brtechnology](https://twitter.com/brtechnology)
 - LinkedIn: [B&R Technology](https://www.linkedin.com/company/brtechnology)
