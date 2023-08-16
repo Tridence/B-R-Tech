@@ -3,3 +3,48 @@
     Make it functional.
     Connect it with a database.
  -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Form</title>
+     <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+     <div class="container">
+       <div class="form-wrapper">
+         <h2 class="form-heading">Let's Talk</h2>
+         <form class="contact-form">
+           <input
+             type="text"
+             autocomplete="off"
+             placeholder="Name"
+             class="contact-form-input"
+           />
+           <input
+             type="email"
+             autocomplete="off"
+             placeholder="Email"
+             class="contact-form-input"
+           />
+           <input
+             type="text"
+             autocomplete="off"
+             placeholder="Subject"
+             class="contact-form-input"
+           />
+           <textarea
+             class="contact-form-input contact-form-textarea"
+             placeholder="Message"
+           ></textarea>
+           <input type="submit" class="form-submit-btn" value="Send Request" />
+         </form>
+       </div>
+     </div>
+ 
+     <script src="script.js"></script>
+   </body>
+ </html>
