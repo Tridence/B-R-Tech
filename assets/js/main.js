@@ -1,9 +1,26 @@
 /**
-* Template Name: Presento - v3.7.0
+* Template Name: B&R Technologies - v3.7.0
 * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-* Author: BootstrapMade.com
+* Author: B&R Technologies
 * License: https://bootstrapmade.com/license/
 */
+
+// Temporary code for the form
+
+function sendEmail(){
+  sendEmail.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  )
+};
+
 (function() {
   "use strict";
 
