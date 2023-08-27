@@ -6,12 +6,13 @@
 */
 
 // Temporary code for the form
+// Will add a secure credentials for the smtp server
 
 function sendEmail(){
   sendEmail.send({
     Host : "smtp.gmail.com",
     Username : "barakaralph@gmail.com",
-    Password : "",
+    Password : "D9B931F72C03EADDA32480E5A37F0EDB39B5",
     To : 'barakaralph@gmail.com',
     From : document.getElementById("email").value,
     Subject : "This is the subject",
