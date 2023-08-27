@@ -5,14 +5,14 @@
 * License: https://bootstrapmade.com/license/
 */
 
-// Temporary code for the form (D9B931F72C03EADDA32480E5A37F0EDB39B5)
+// Temporary code for the form ()
 // Will add a secure credentials for the smtp server
 
 function sendEmail(){
-  sendEmail.send({
+  Email.send({
     Host : "smtp.gmail.com",
     Username : "barakaralph@gmail.com",
-    Password : "Chevrolet@19.",
+    Password : "D9B931F72C03EADDA32480E5A37F0EDB39B5",
     To : 'barakaralph@gmail.com',
     From : document.getElementById("email").value,
     Subject : "This is the subject",
