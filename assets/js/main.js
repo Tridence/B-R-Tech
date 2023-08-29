@@ -5,8 +5,10 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
 // Temporary code for the form ()
 // Will add a secure credentials for the smtp server
+
 
 function sendEmail(){
   Email.send({
