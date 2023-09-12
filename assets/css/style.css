@@ -5,6 +5,8 @@
 * License: https://bootstrapmade.com/license/
 */
 
+@import url('https://fonts.cdnfonts.com/css/footlight-mt-pro');
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -24,7 +26,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Footlight MT Pro', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -354,7 +356,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   #hero {
     text-align: center;
-    padding-top: 58px;
+    padding-top: 78px;
+    background: url("../img/hero-bg1.jpg") top center no-repeat;
   }
   #hero h1 {
     font-size: 28px;
@@ -402,6 +405,7 @@ section {
   bottom: 0;
   left: calc(50% - 25px);
 }
+
 .section-title p {
   margin-bottom: 0;
 }
@@ -478,9 +482,7 @@ section {
   background-color: #e03a3c;
 }
 .clients .swiper-slide img {
-  opacity: 0.5;
   transition: 0.3s;
-  filter: grayscale(100);
 }
 .clients .swiper-slide img:hover {
   opacity: 1;
@@ -1127,6 +1129,8 @@ section {
   font-size: 14px;
   line-height: 26px;
   color: #777777;
+
+  
 }
 .team .member:hover .social {
   opacity: 1;
@@ -1139,14 +1143,15 @@ section {
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(204, 204, 204, 0.6);
   padding: 30px 0 32px 0;
-  border-radius: 4px;
+  border-radius: 32px;
 }
 .contact .info-box i {
   font-size: 32px;
   color: #e03a3c;
   border-radius: 50%;
+  box-shadow: #111;
   padding: 8px;
   border: 2px dotted #f8d4d5;
 }
@@ -1163,9 +1168,9 @@ section {
   margin-bottom: 0;
 }
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(204, 204, 204, 0.6);
   padding: 30px;
-  border-radius: 4px;
+  border-radius: 34px;
 }
 .contact .php-email-form .error-message {
   display: none;
@@ -1210,10 +1215,10 @@ section {
 .contact .php-email-form input, .contact .php-email-form textarea {
   box-shadow: none;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 34px;
 }
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #111111;
+  border-color: #cacaca;
 }
 .contact .php-email-form input {
   padding: 10px 15px;
@@ -1248,6 +1253,7 @@ section {
     transform: rotate(360deg);
   }
 }
+
 
 /*--------------------------------------------------------------
 # Blog
