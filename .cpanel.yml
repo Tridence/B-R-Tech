@@ -1,6 +1,5 @@
----
+    ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/brtechno/public_html
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp /css/main.css $DEPLOYPATH
+    - export DEPLOYPATH=/home/brtechno/public_html/
+    - /bin/cp -R * $DEPLOYPATH
