@@ -46,6 +46,7 @@ For any inquiries or collaboration opportunities, please reach out to us:
 - Website: https://www.brtechnology.co.ke
 - Twitter: [@b_rtech](https://twitter.com/b_rtech)
 - LinkedIn: [B & R Technologies](https://www.linkedin.com/company/b-r-technologies)
+- Instagram: [B & R Technology](https://www.instagram.com/br_t3ch/)
 
 ## License
 
