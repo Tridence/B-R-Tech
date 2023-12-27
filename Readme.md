@@ -42,11 +42,11 @@ We welcome contributions from the open-source community. To contribute to our pr
 
 For any inquiries or collaboration opportunities, please reach out to us:
 
-- Email: info@brtechnology.co.ke
-- Website: https://www.brtechnology.co.ke
+- Email: info@brtechnologies.co.ke
+- Website: [https://www.brtechnologies.co.ke](http://brtechnologies.co.ke/)
 - Twitter: [@b_rtech](https://twitter.com/b_rtech)
 - LinkedIn: [B & R Technologies](https://www.linkedin.com/company/b-r-technologies)
-- Instagram: [B & R Technology](https://www.instagram.com/br_t3ch/)
+- Instagram: [B & R Technologies](https://www.instagram.com/br_t3ch/)
 
 ## License
 
