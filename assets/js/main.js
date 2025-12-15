@@ -313,3 +313,89 @@ function sendEmail(){
   });
 
 })()
+
+document.addEventListener('DOMContentLoaded', () => {
+    const snowContainer = document.getElementById('snow-container');
+    const snowflakeCount = 30; // Number of snowflakes you want
+
+    function createSnowflake() {
+        // 1. Create the snowflake element
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        
+        // Use a simple text symbol or Unicode character for the snowflake
+        // Common Unicode: ❄ (U+2744), ❅ (U+2745), ❆ (U+2746)
+        snowflake.innerHTML = '❅'; 
+
+        // 2. Set random properties
+        
+        // Random horizontal position (0% to 100% of width)
+        const startX = Math.random() * 100;
+        // Start above the screen
+        const startY = - (Math.random() * 20); 
+        
+        // Random size (0.5 to 1.5 times the base size in CSS)
+        const size = Math.random() * 1 + 0.5; 
+        
+        // Random speed (5s to 15s)
+        const duration = Math.random() * 10 + 5; 
+        
+        // Random delay so they don't all start at once
+        const delay = Math.random() * 5; 
+        
+        // Set styles
+        snowflake.style.left = `${startX}vw`;
+        snowflake.style.top = `${startY}vh`;
+        snowflake.style.fontSize = `${size}em`;
+        snowflake.style.animationDuration = `${duration}s`;
+        snowflake.style.animationDelay = `${delay}s`;
+        
+        // 3. Add animation keyframes (we define the keyframes in JS)
+        // This is a simplified way to apply random motion. 
+        // A better, dedicated animation is defined below.
+        
+        // 4. Append to container
+        snowContainer.appendChild(snowflake);
+
+        // 5. Restart the animation when it finishes
+        snowflake.addEventListener('animationiteration', function() {
+            // Reposition snowflake at the top with a new random X position
+            this.style.left = `${Math.random() * 100}vw`;
+            this.style.top = `-5vh`; // Start slightly above the viewport
+        });
+    }
+
+    // 6. Define the CSS animation keyframes
+    // The animation will make it fall and subtly move sideways (wind effect)
+    const styleSheet = document.createElement('style');
+    styleSheet.type = 'text/css';
+    styleSheet.innerHTML = `
+        @keyframes snowfall {
+            0% { 
+                transform: translate3d(0, 0, 0) rotate(0deg); 
+                opacity: 0.9;
+            }
+            50% { 
+                /* Subtle sideways swing */
+                transform: translate3d(${Math.random() > 0.5 ? '20px' : '-20px'}, 50vh, 0) rotate(180deg);
+                opacity: 0.7;
+            }
+            100% { 
+                transform: translate3d(0, 100vh, 0) rotate(360deg); 
+                opacity: 0.5;
+            }
+        }
+        .snowflake {
+            animation-name: snowfall;
+            animation-timing-function: linear; /* Constant speed */
+            animation-iteration-count: infinite; /* Loop forever */
+        }
+    `;
+    document.head.appendChild(styleSheet);
+
+
+    // 7. Create all the snowflakes
+    for (let i = 0; i < snowflakeCount; i++) {
+        createSnowflake();
+    }
+});

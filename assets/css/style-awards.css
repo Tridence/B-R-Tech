@@ -1,0 +1,210 @@
+/* 2. ITEM STYLING: Calculate the width for three items side-by-side */
+.award-badges-wrapper .logo {
+    /* *** MODIFIED START *** */
+    /* Set a maximum width in pixels for a smaller appearance */
+    max-width: 150px;
+    
+    /* Allow them to shrink, but keep the initial percentage for alignment 
+       when the screen is smaller than the combined max-width.
+       The flex basis (33.33% - 20px) is fine here to still align 3 in a row,
+       but the max-width will cap the size.
+    */
+    flex: 0 0 calc(33.33% - 20px); 
+    /* *** MODIFIED END *** */
+    
+    /* The rest of the original styling is fine */
+    
+    /* Ensure the badge block is rendered correctly */
+    display: block; 
+    text-align: center;
+    
+    background-color: #ffffff;
+    border: .0.1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 3px;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Apply Footlight font stack globally within the hero section */
+.hero-section {
+  width: 100%;
+  min-height: 100vh; 
+  background: url('path/to/your/modern-bg-image.jpg') center / cover no-repeat;
+  position: relative;
+  padding: 120px 0; 
+  display: flex;
+  
+  /* --- NEW FONT CHANGE --- */
+  /* Use Footlight MT, with Times New Roman as a fallback */
+  font-family: 'Footlight MT Light', 'Footlight MT', 'Times New Roman', Times, serif; 
+}
+
+/* Subtle dark overlay for better text contrast */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* Ensure all content is above the overlay */
+.hero-section .container {
+  z-index: 2;
+  position: relative;
+}
+
+/* Hero Main Title (B&R Technologies) */
+.hero-title {
+  margin: 0;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  /* Slightly increased letter spacing for a 'spread' effect */
+  letter-spacing: 3px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+  /* --- COVER 85% WIDTH --- */
+  /* Setting the maximum width of the title container to 85% of its parent (the column) */
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Tagline/Primary Message */
+.hero-tagline {
+  color: #f8f9fa;
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-weight: 400;
+
+  /* --- COVER 85% WIDTH --- */
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Detailed Description */
+.hero-description {
+  color: #e9ecef;
+  font-size: 1.15rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  
+  /* --- COVER 85% WIDTH --- */
+  /* This ensures the body text spans roughly 85% of the screen width on large screens */
+  max-width: 85%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Call to Action Button Container */
+.hero-cta {
+  margin-top: 30px;
+}
+
+/* Primary Button Styling */
+.btn-primary {
+  /* Keeping a clean font for the button for better legibility */
+  font-family: 'Poppins', sans-serif; 
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  line-height: 1;
+  color: #fff;
+  background: #007bff;
+  border: 2px solid #007bff;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  border-color: #0056b3;
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* =================================
+// MEDIA QUERIES FOR RESPONSIVENESS
+================================= */
+
+@media (max-width: 992px) {
+  .hero-section {
+    min-height: 80vh; 
+  }
+
+  /* Reset max-width to allow text to take up more space on smaller screens */
+  .hero-title, 
+  .hero-tagline, 
+  .hero-description {
+      max-width: 95%; 
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 0;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.25rem;
+  }
+}
+
+
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of viewport width */
+    height: 100vh; /* 100% of viewport height */
+    pointer-events: none; /* Allows user to click links/buttons underneath the snow */
+    z-index: 1000; /* Ensure snow is on top of other elements */
+    overflow: hidden; /* Important: keeps snowflakes from creating scrollbars */
+}
+
+/* Base style for a single snowflake */
+.snowflake {
+    color: #fff;
+    font-size: 3em; /* Adjust size here */
+    position: absolute;
+    /* Use a symbol for the snowflake */
+    content: "❄"; 
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    opacity: 0.3;
+}
+
+/* OPTIONAL: To make the snow container look like a snowy night background */
+/* body {
+    background-color: #0d1a26; /* Dark blue or any color */
+} */
