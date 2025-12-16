@@ -1,30 +1,27 @@
 /* 2. ITEM STYLING: Calculate the width for three items side-by-side */
-.award-badges-wrapper .logo {
-    /* *** MODIFIED START *** */
-    /* Set a maximum width in pixels for a smaller appearance */
-    max-width: 150px;
-    
-    /* Allow them to shrink, but keep the initial percentage for alignment 
-       when the screen is smaller than the combined max-width.
-       The flex basis (33.33% - 20px) is fine here to still align 3 in a row,
-       but the max-width will cap the size.
-    */
-    flex: 0 0 calc(33.33% - 20px); 
-    /* *** MODIFIED END *** */
-    
-    /* The rest of the original styling is fine */
-    
-    /* Ensure the badge block is rendered correctly */
-    display: block; 
-    text-align: center;
-    
-    background-color: #ffffff;
-    border: .0.1px solid #e0e0e0;
-    border-radius: 6px;
-    padding: 3px;
-    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.award-badges-wrapper {
+    display: flex;            /* Positions items in a row */
+    justify-content: center;  /* Centers the three badges together */
+    align-items: center;      /* Vertically aligns them */
+    gap: 15px;                /* Adds spacing between the badges */
+    width: 100%;              /* Ensures the container spans the full width */
+    padding: 20px 0;          /* Adds breathing room above/below */
+
 }
+
+.award-badges-wrapper a {
+    flex: 1;                  /* Forces each link to take equal width */
+    max-width: 300px;         /* Prevents badges from getting too large */
+}
+
+.tech-award-badge {
+    width: 100%;              /* Responsive: scales with the link container */
+    height: auto;             /* Keeps the image proportions correct */
+    display: block;
+    border: 3px solid #ffffff; /* 5px is the thickness, #ffffff is the color */
+    border-radius: 15px; /* Increase this number for more rounding */
+}
+
 
 
 
@@ -207,4 +204,3 @@
 /* OPTIONAL: To make the snow container look like a snowy night background */
 /* body {
     background-color: #0d1a26; /* Dark blue or any color */
-} */
