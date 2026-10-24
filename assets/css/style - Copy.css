@@ -460,24 +460,24 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .swiper-pagination {
+.clients1 .swiper-pagination1 {
   margin-top: 20px;
   position: relative;
 }
-.clients .swiper-pagination .swiper-pagination-bullet {
+.clients1 .swiper-pagination .swiper-pagination-bullet1 {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #e03a3c;
 }
-.clients .swiper-pagination .swiper-pagination-bullet-active {
+.clients1 .swiper-pagination1 .swiper-pagination-bullet-active1 {
   background-color: #e03a3c;
 }
-.clients .swiper-slide img {
+.clients11 .swiper-slide1 img {
   transition: 0.3s;
 }
-.clients .swiper-slide img:hover {
+.clients1 .swiper-slide1 img:hover {
   opacity: 1;
   filter: none;
 }
