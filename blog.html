@@ -10,7 +10,9 @@
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap"></noscript>
 <meta property="og:title" content="Digital Marketing &amp; Web Design Blog Kenya | B&amp;R Technologies">
 <meta property="og:description" content="Practical digital marketing, web design and SEO guides for Kenyan businesses.">
 <meta property="og:image" content="https://www.brtechnologies.co.ke/assets/img/logo2.png">
@@ -27,8 +29,9 @@
 {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.brtechnologies.co.ke/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.brtechnologies.co.ke/blog"}]}
 ]}</script>
 <style>
-:root{--hero-img:url('assets/img/hero-bg.jpg');--ink:#0b1220;--muted:#5b6678;--bg:#fff;--soft:#f5f7fb;--line:#e4e8f0;--navy:#0a1730;--blue:#2563eb;--blue2:#1d4ed8;--glow:#60a5fa;--r:16px;
+:root{--hero-img:url('assets/img/hero-bg-800.webp');--ink:#0b1220;--muted:#5b6678;--bg:#fff;--soft:#f5f7fb;--line:#e4e8f0;--navy:#0a1730;--blue:#2563eb;--blue2:#1d4ed8;--glow:#60a5fa;--r:16px;
 --head:'Montserrat','Segoe UI',system-ui,-apple-system,sans-serif;--body:'Montserrat','Segoe UI',system-ui,-apple-system,sans-serif}
+@media(min-width:801px){:root{--hero-img:url('assets/img/hero-bg.webp')}}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{font:400 15.5px/1.75 var(--body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
@@ -194,18 +197,12 @@ nav.open{display:flex}nav a{color:var(--ink)}}
   <div class="head" data-r><div class="eyebrow">What we write about</div><h2>Our latest guides</h2>
   <p>Our team works across B2B web design and development, mobile applications, digital strategy, user experience, advertising, social media, content management systems and email marketing. Each guide explains one area in plain language, so you can decide what your business needs next.</p></div>
   <div class="bgrid" data-r>
-    <article class="card"><div class="ico" aria-hidden="true">◆</div><h2 style="font-size:19px;margin-bottom:8px">Digital Branding: Build a Brand That Stands Out Online</h2><p>Your brand is more than a logo. It is how customers recognise and trust you across your website, social 
-      media and search results. Learn how website development, digital marketing, social media management and SEO work together to keep your brand ahead of the competition.</p><span class="soon">Guide coming soon</span></article>
-    <article class="card"><div class="ico" aria-hidden="true">◎</div><h2 style="font-size:19px;margin-bottom:8px">How Much Do SEO Services Cost in Kenya?</h2><p>Budget is usually the first question business owners ask. 
-      This guide helps you understand SEO pricing in Kenya and what to ask an agency before you sign, so you can compare quotes fairly.</p><span class="soon">Guide coming soon</span></article>
-    <article class="card"><div class="ico" aria-hidden="true">▣</div><h2 style="font-size:19px;margin-bottom:8px">Website Solutions for Every Screen Size</h2><p>Web design and development is where we started. Designing for 
-      phones, tablets and desktops takes precision, which is why we hand-craft every website. See how a responsive site helps visitors find you, trust you and get in touch.</p><span class="soon">Guide coming soon</span></article>
-    <article class="card"><div class="ico" aria-hidden="true">☐</div><h2 style="font-size:19px;margin-bottom:8px">Mobile and Tablet Solutions</h2><p>Mobile devices are often where customers first meet your business. We explain 
-      the best practices that make a site quick, clear and easy to use on screens of every size.</p><span class="soon">Guide coming soon</span></article>
-    <article class="card"><div class="ico" aria-hidden="true">↗</div><h2 style="font-size:19px;margin-bottom:8px">Digital Marketing: Get the Exposure Your Business Needs</h2><p>You have invested time and money in your business. 
-      Digital marketing helps the right people find it, from search and social media to email campaigns.</p><span class="soon">Guide coming soon</span></article>
-    <article class="card"><div class="ico" aria-hidden="true">W</div><h2 style="font-size:19px;margin-bottom:8px">Enterprise Content Management (CMS) Solutions</h2><p>If you need to publish and manage content efficiently, a 
-      content management platform such as WordPress gives you control without constant developer help. We explain how to choose and use one for your business.</p><span class="soon">Guide coming soon</span></article>
+    <article class="card"><div class="ico" aria-hidden="true">◆</div><h2 style="font-size:19px;margin-bottom:8px">Digital Branding: Build a Brand That Stands Out Online</h2><p>Your brand is more than a logo. It is how customers recognise and trust you across your website, social media and search results. Learn how website development, digital marketing, social media management and SEO work together to keep your brand ahead of the competition.</p><a class="more" href="/dg_branding">Read the digital branding guide →</a></article>
+    <article class="card"><div class="ico" aria-hidden="true">◎</div><h2 style="font-size:19px;margin-bottom:8px">How Much Do SEO Services Cost in Kenya?</h2><p>Budget is usually the first question business owners ask. This guide helps you understand SEO pricing in Kenya and what to ask an agency before you sign, so you can compare quotes fairly.</p><a class="more" href="/blogs/str.planning">Read the SEO cost guide →</a></article>
+    <article class="card"><div class="ico" aria-hidden="true">▣</div><h2 style="font-size:19px;margin-bottom:8px">Website Solutions for Every Screen Size</h2><p>Web design and development is where we started. Designing for phones, tablets and desktops takes precision, which is why we hand-craft every website. See how a responsive site helps visitors find you, trust you and get in touch.</p><span class="soon">Guide coming soon</span></article>
+    <article class="card"><div class="ico" aria-hidden="true">☐</div><h2 style="font-size:19px;margin-bottom:8px">Mobile and Tablet Solutions</h2><p>Mobile devices are often where customers first meet your business. We explain the best practices that make a site quick, clear and easy to use on screens of every size.</p><span class="soon">Guide coming soon</span></article>
+    <article class="card"><div class="ico" aria-hidden="true">↗</div><h2 style="font-size:19px;margin-bottom:8px">Digital Marketing: Get the Exposure Your Business Needs</h2><p>You have invested time and money in your business. Digital marketing helps the right people find it, from search and social media to email campaigns.</p><span class="soon">Guide coming soon</span></article>
+    <article class="card"><div class="ico" aria-hidden="true">W</div><h2 style="font-size:19px;margin-bottom:8px">Enterprise Content Management (CMS) Solutions</h2><p>If you need to publish and manage content efficiently, a content management platform such as WordPress gives you control without constant developer help. We explain how to choose and use one for your business.</p><span class="soon">Guide coming soon</span></article>
   </div>
 </div></section>
 
@@ -271,7 +268,7 @@ function loadThirdParty(){
  add("https://cdn.chatway.app/widget.js?id=Sm9YRVhTEDs2","chatway");
 }
 ["scroll","pointerdown","keydown","touchstart"].forEach(ev=>addEventListener(ev,loadThirdParty,{once:true,passive:true}));
-setTimeout(loadThirdParty,4000);
+setTimeout(loadThirdParty,8000);
 </script>
 </body>
 </html>

@@ -9,7 +9,8 @@
 <meta name="p:domain_verify" content="992fbbf8fad02f850177e77ca2d1f462">
 <link href="assets/img/favicon.ico" rel="icon">
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-<link rel="preload" as="image" href="assets/img/hero-bg.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/hero-bg-800.webp" type="image/webp" media="(max-width:800px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/hero-bg.webp" type="image/webp" media="(min-width:801px)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap">
@@ -27,8 +28,9 @@
 <meta name="twitter:image" content="https://www.brtechnologies.co.ke/assets/img/logo2.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"B&R Technologies","url":"https://www.brtechnologies.co.ke/","logo":"https://www.brtechnologies.co.ke/assets/img/logo2.png","description":"B&R Technologies provides website development, digital marketing, and business automation services in Kenya.","sameAs":["https://instagram.com/brtechnologies","https://twitter.com/b_rtech","https://www.linkedin.com/company/b-r-technologies","https://techbehemoths.com/company/b-r-technologies"],"contactPoint":{"@type":"ContactPoint","telephone":"+254716304035","email":"info@brtechnologies.co.ke","contactType":"customer service","areaServed":"KE","availableLanguage":["English","Swahili"]}}</script>
 <style>
-:root{--hero-img:url('assets/img/hero-bg.jpg');--ink:#0b1220;--muted:#5b6678;--bg:#fff;--soft:#f5f7fb;--line:#e4e8f0;--navy:#0a1730;--blue:#2563eb;--blue2:#1d4ed8;--glow:#60a5fa;--r:16px;
+:root{--hero-img:url('assets/img/hero-bg-800.webp');--ink:#0b1220;--muted:#5b6678;--bg:#fff;--soft:#f5f7fb;--line:#e4e8f0;--navy:#0a1730;--blue:#2563eb;--blue2:#1d4ed8;--glow:#60a5fa;--r:16px;
 --head:'Montserrat','Segoe UI',system-ui,-apple-system,sans-serif;--body:'Montserrat','Segoe UI',system-ui,-apple-system,sans-serif}
+@media(min-width:801px){:root{--hero-img:url('assets/img/hero-bg.webp')}}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{font:400 15.5px/1.75 var(--body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
@@ -217,10 +219,10 @@ nav.open{display:flex}nav a{color:var(--ink)}}
 </div></section>
 
 <section class="stats" aria-label="Company stats"><div class="wrap row">
-  <div><b data-n="231">231</b><span>Happy Clients</span></div>
-  <div><b data-n="357">357</b><span>Projects</span></div>
-  <div><b data-n="9631">9631</b><span>Hours of Support</span></div>
-  <div><b data-n="17">17</b><span>Smart Workers</span></div>
+  <div><b data-n="13">13</b><span>Happy Clients</span></div>
+  <div><b data-n="37">37</b><span>Projects</span></div>
+  <div><b data-n="463">463</b><span>Hours of Support</span></div>
+  <div><b data-n="11">11</b><span>Smart Workers</span></div>
 </div></section>
 
 <section id="services" class="services"><div class="wrap">
