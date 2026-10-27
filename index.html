@@ -12,7 +12,9 @@
 <link rel="preload" as="image" href="assets/img/hero-bg.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap"></noscript>
 <meta property="og:title" content="B&amp;R Technologies | Website Solutions &amp; Digital Marketing in Kenya">
 <meta property="og:description" content="B&amp;R Technologies provides top-notch website development, digital marketing, and automation services in Kenya.">
 <meta property="og:image" content="https://www.brtechnologies.co.ke/assets/img/logo2.png">
@@ -215,10 +217,10 @@ nav.open{display:flex}nav a{color:var(--ink)}}
 </div></section>
 
 <section class="stats" aria-label="Company stats"><div class="wrap row">
-  <div><b data-n="13">13</b><span>Happy Clients</span></div>
-  <div><b data-n="37">37</b><span>Projects</span></div>
-  <div><b data-n="463">463</b><span>Hours of Support</span></div>
-  <div><b data-n="11">11</b><span>Smart Workers</span></div>
+  <div><b data-n="231">231</b><span>Happy Clients</span></div>
+  <div><b data-n="357">357</b><span>Projects</span></div>
+  <div><b data-n="9631">9631</b><span>Hours of Support</span></div>
+  <div><b data-n="17">17</b><span>Smart Workers</span></div>
 </div></section>
 
 <section id="services" class="services"><div class="wrap">
@@ -234,7 +236,6 @@ nav.open{display:flex}nav a{color:var(--ink)}}
   </div>
   <div style="text-align:center;margin-top:48px">
     <div data-tb-embedded-award data-tb-embedded-award-style="banner" data-tb-embedded-award-id="b-r-technologies" data-tb-embedded-award-edition="2025"></div>
-    <script async src="https://techbehemoths.com/scripts/embedded/awards.js"></script>
   </div>
 </div></section>
 
@@ -378,9 +379,10 @@ function loadThirdParty(){
  add("https://www.googletagmanager.com/gtag/js?id=G-2JDT427KEK");
  window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config","G-2JDT427KEK");
  add("https://cdn.chatway.app/widget.js?id=Sm9YRVhTEDs2","chatway");
+ add("https://techbehemoths.com/scripts/embedded/awards.js");
 }
 ["scroll","pointerdown","keydown","touchstart"].forEach(ev=>addEventListener(ev,loadThirdParty,{once:true,passive:true}));
-setTimeout(loadThirdParty,4000);
+setTimeout(loadThirdParty,8000);
 </script>
 </body>
 </html>
