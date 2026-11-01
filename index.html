@@ -319,6 +319,22 @@ nav.open{display:flex}nav a{color:var(--ink)}}
 <div id="lb" role="dialog" aria-modal="true" aria-label="Image preview"><img alt=""></div>
 
 <script>
+
+// Random Page Redirect
+        // Array of your HTML pages
+        const pages = [
+            'index.html',
+            'index-classic.html',
+            'index-maxima-v1.html'
+        ];
+
+        // Pick a random index from the array
+        const randomIndex = Math.floor(Math.random() * pages.length);
+
+        // Redirect the user to the randomly selected page
+        window.location.replace(pages[randomIndex]);
+
+
 /* ---- Form endpoints ----
    Paste your Formspree (or similar) URLs here, e.g. "https://formspree.io/f/xxxxxxx".
    While empty, forms fall back to opening the visitor's email app. */
